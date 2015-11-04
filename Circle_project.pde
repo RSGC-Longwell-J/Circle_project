@@ -7,6 +7,8 @@ float x=400;
 float y=400;
 float x2=300;
 float y2=500;
+float x3=300;
+float y3=500;
 float hue=0;
 
 //Things that run once
@@ -24,7 +26,7 @@ void setup() {
 void draw() {
   
   stroke(hue,80,90);
-  line(x2,y2, 300,500);
+  line(x2, y2, x3, y3);
   
   noStroke();
   fill(random (255), random(255), random(255) );
@@ -36,6 +38,14 @@ void draw() {
   y= y + random(-10, 10);
   x2= x2 + random(-5, 5);
   y2= y2 + random(-5, 5);
+  x3= x3 + random(-5, 5);
+  y3= y3 + random(-5, 5);
+  hue= hue + 1;
+  
+  if (hue > 360) {
+    hue=0;
+  }
+  
 }
 //get a screen shot
 
