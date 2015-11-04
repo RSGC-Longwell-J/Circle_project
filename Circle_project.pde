@@ -7,7 +7,7 @@ float x=400;
 float y=400;
 
 //Things that run once
-void Setup() {
+void setup() {
 
   //How big it is
   size(800, 800);
@@ -16,14 +16,13 @@ void Setup() {
   background(255);
 }
 
-void Draw() {
-  fill(0);
+void draw() {
+  noStroke();
+  fill(random (255), random(255), random(255) );
   //draw the circle
-  ellipse(x, y, 10, 10);
-  
+  ellipse(x, y, 40, 40);
+
   //randomize the placment
   x= x + random(-10, 10);
-  y= y + random(-10,10);
-
-  
+  y= y + random(-10, 10);
 }
