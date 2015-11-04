@@ -7,10 +7,13 @@ float x=400;
 float y=400;
 float x2=300;
 float y2=500;
+float hue=0;
 
 //Things that run once
 void setup() {
 
+  colorMode(HSB, 360, 100, 100);                                                                                             
+  
   //How big it is
   size(800, 800);
 
@@ -20,7 +23,7 @@ void setup() {
 
 void draw() {
   
-  stroke(random(255) );
+  stroke(hue,80,90);
   line(x2,y2, 300,500);
   
   noStroke();
