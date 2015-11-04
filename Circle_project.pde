@@ -5,6 +5,8 @@
 //variables
 float x=400;
 float y=400;
+float x2=300;
+float y2=500;
 
 //Things that run once
 void setup() {
@@ -17,6 +19,10 @@ void setup() {
 }
 
 void draw() {
+  
+  stroke(random(255) );
+  line(x2,y2, 300,500);
+  
   noStroke();
   fill(random (255), random(255), random(255) );
   //draw the circle
@@ -25,4 +31,13 @@ void draw() {
   //randomize the placment
   x= x + random(-10, 10);
   y= y + random(-10, 10);
+  x2= x2 + random(-5, 5);
+  y2= y2 + random(-5, 5);
+}
+//get a screen shot
+
+void keypressed() {
+  
+  saveFrame("output-########.png");
+  
 }
