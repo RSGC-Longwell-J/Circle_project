@@ -20,7 +20,7 @@ void draw() {
   noStroke();
   fill(random (255), random(255), random(255) );
   //draw the circle
-  ellipse(x, y, 40, 40);
+  ellipse(x, y, random(70), random(70));
 
   //randomize the placment
   x= x + random(-10, 10);
