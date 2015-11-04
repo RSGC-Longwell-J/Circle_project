@@ -1,0 +1,29 @@
+//Nov 4, 2015
+
+//first generative design program
+
+//variables
+float x=400;
+float y=400;
+
+//Things that run once
+void Setup() {
+
+  //How big it is
+  size(800, 800);
+
+  //White backgroud
+  background(255);
+}
+
+void Draw() {
+  fill(0);
+  //draw the circle
+  ellipse(x, y, 10, 10);
+  
+  //randomize the placment
+  x= x + random(-10, 10);
+  y= y + random(-10,10);
+
+  
+}
