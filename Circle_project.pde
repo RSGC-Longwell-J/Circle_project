@@ -15,13 +15,13 @@ float hue=0;
 
 //Things that run once
 void setup() {
-  colorMode(HSB, 360, 100, 100);                                                                                             
+  colorMode(RGB, 0, 0, 360);                                                                                             
 
   //How big it is
   size(800, 800);
 
   //White backgroud
-  background(255);
+  background(360);
 }
 
 void draw() {
@@ -37,10 +37,10 @@ void draw() {
   //randomize the placment
   x= x + random(-100, 100);
   y= y + random(-100, 100);
-  x2= x2 + random(-5, 5);
-  y2= y2 + random(-5, 5);
-  x3= x3 + random(-5, 5);
-  y3= y3 + random(-5, 5);
+  x2= x2 + random(-25, 25);
+  y2= y2 + random(-25, 25);
+  x3= x3 + random(-25, 25);
+  y3= y3 + random(-25, 25);
   hue= hue + 1;
 
   if (hue > 360) {
@@ -62,10 +62,43 @@ void draw() {
   if(y < 0){
     y=400;
   }
+  
+  
+  if (x2 > 800) {
+    x2=400;
+  }
+  
+  if (x2 < 0) {
+    x2=400;
+  }
+  
+  if (x3 > 800) {
+    x3=400;
+  }
+  
+   if (x3 < 0) {
+    x3=400;
+  }
+  
+  if (y2 > 800) {
+    y2=400;
+  }
+  
+   if (y2 < 0) {
+    y2=400;
+  }
+  
+  if (y3 > 800) {
+    y3=400;
+  }
+  
+  if (y3 < 0) {
+    y3=400;
+  }
 }
 //get a screen shot
 
-void keypressed() {
+void keyPressed() {
 
   saveFrame("output-########.png");
 }
