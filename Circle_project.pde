@@ -20,8 +20,8 @@ void setup() {
   //How big it is
   size(800, 800);
 
-  //White backgroud
-  background(360);
+  //White backgsroud
+  background(250);
 }
 
 void draw() {
@@ -33,6 +33,8 @@ void draw() {
   fill(random (255), random(255), random(255) );
   //draw the circle
   ellipse(x, y, random(70), random(70));
+  
+  rect(x2,y2, random(80), random(80));
 
   //randomize the placment
   x= x + random(-100, 100);
