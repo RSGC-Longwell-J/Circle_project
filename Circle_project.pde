@@ -23,13 +23,13 @@ void setup() {
   //White backgsroud
   background(200);
   
-  frameRate(60);
+  frameRate(120);
 }
 
 void draw() {
 
-  //stroke(hue, 80, 90);
-  //line(x2, y2, x3, y3);
+  stroke(random(255), random(255), random(255) );
+  line(x2, y2, x3, y3);
 
   noStroke();
   fill(random (255), random(255), random(255) );
@@ -45,60 +45,10 @@ void draw() {
   y2= random(-800, 800);
   x3= random(-800, 800);
   y3= random(-800, 800);
+  
+  //continuouly randomize color of shapes
   hue= hue + 1;
-
-  //if (hue > 360) {
-  //  hue=0;
-  //}
-
-  //if (x > 800) {
-  //  x=400;
-  //}
-
-  //if (x < 0) {
-  //  x=400;
-  //}
   
-  //if(y > 800){
-  //y=400;
-  //}
-  
-  //if(y < 0){
-  //  y=400;
-  //}
-  
-  
-  //if (x2 > 800) {
-  //  x2=400;
-  //}
-  
-  //if (x2 < 0) {
-  //  x2=400;
-  //}
-  
-  //if (x3 > 800) {
-  //  x3=400;
-  //}
-  
-  // if (x3 < 0) {
-  //  x3=400;
-  //}
-  
-  //if (y2 > 800) {
-  //  y2=400;
-  //}
-  
-  // if (y2 < 0) {
-  //  y2=400;
-  //}
-  
-  //if (y3 > 800) {
-  //  y3=400;
-  //}
-  
-  //if (y3 < 0) {
-  //  y3=400;
-  //}
 }
 //get a screen shot
 
